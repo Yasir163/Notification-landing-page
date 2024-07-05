@@ -1,37 +1,45 @@
-:root{
-    color: hsl(210, 60%, 98%);
-    color: hsl(211, 68%, 94%);
-    color: hsl(205, 33%, 90%);
-    color: hsl(219, 14%, 63%);
-    color: hsl(219, 12%, 42%);
-    color: hsl(224, 21%, 14%);
-}
 
+@font-face{
+    font-family: 'customfont';
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'customfont';
+    src: url(assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+b{
+    font-family: 'custom',serif;
+    font-weight: bold;
+}
 .container{
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+    font-family: 'custom',sans-serif;
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 .notification-heading{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 5px;
 }
 
 .heading-text{
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -42,8 +50,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .15rem .45rem;
-    font-size: 1.5rem;
+    padding: .15rem .35rem;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -81,6 +89,8 @@
     color: hsl(219, 14%, 63%);;
 }
 .bold-black{
+    font-weight: bold;
+    font-family: 'custom', sans-serif;
     color: black;
 }
 /* angela gray */
@@ -106,6 +116,7 @@
 }
 .bold-blue{
     color: rgb(18, 18, 150);
+    font-family: 'custom',sans-serif;
 }
 
 /* Rizky */
@@ -121,6 +132,10 @@
     border-radius: 5px;
     max-width: 1000px;
     padding: 5px 10px;
+}
+.rizky-msg:hover,.rizky-msg:active{
+    cursor: pointer;
+    background-color:hsl(205, 33%, 90%) ;
 }
 
 /* Kimberly Smith */
